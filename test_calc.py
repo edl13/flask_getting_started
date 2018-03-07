@@ -8,4 +8,4 @@ def test_dist():
     b = [3.5, -9.9]
 
     dis = getDis(a, b)
-    assert dis == pytest.approx(9.56347217)
+    assert dis == pytest.approx(11.44814)

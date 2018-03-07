@@ -19,7 +19,8 @@ def distance():
     r = request.get_json()
     point_a = r['a']
     point_b = r['b']
-    dis = ((point_a[0] - point_b[0])**2 + (point_a[1] - point_b[1])**2)**0.5
+
+    dis = getDis(point_a, point_b)
 
     dis_dict = {
         'Distance': dis,
@@ -28,3 +29,8 @@ def distance():
     }
 
     return jsonify(dis_dict)
+
+
+def getDis(a, b):
+    dis = ((a[0] - b[0])**2 + (a[1] - b[1])**2)**0.5
+    return dis

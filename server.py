@@ -33,3 +33,4 @@ def distance():
 
 def getDis(a, b):
     dis = ((a[0] - b[0])**2 + (a[1] - b[1])**2)**0.5
+    return dis
